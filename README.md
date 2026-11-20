@@ -19,3 +19,15 @@ cmp /tmp/test-failure-demo/scores.json /tmp/test-failure-demo/regraded.json
 The demo uses two hard-coded responses and makes zero model requests. Its scores
 verify the workflow and grader. The live model integration and benchmark belong
 to the later phases.
+
+## Held-out benchmark results
+
+The [Phase 3 report](benchmark/phase3/README.md) summarizes the single
+held-out run and links to its raw responses and scores.
+
+To regrade the saved run offline, start in the repository root.
+
+```sh
+python3 workflow.py regrade benchmark/phase3/run.json /tmp/failure-held-out-regrade.json
+cmp benchmark/phase3/scores.json /tmp/failure-held-out-regrade.json
+```
