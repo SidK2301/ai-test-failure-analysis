@@ -15,7 +15,7 @@ never abstained on the sparse cases.
 - **Category accuracy:** 6/18. The model labeled the other 12 diagnosable cases as missing dependencies.
 - **Abstention:** 0/7. The model diagnosed every sparse case as a timeout.
 
-See the [full report](benchmark/phase3/README.md) for the 25-case breakdown,
+See the [full report](benchmark/held-out/README.md) for the 25-case breakdown,
 limitations, and raw results. The [evaluation spec](eval_spec.md) defines the
 grading rules.
 
@@ -45,6 +45,6 @@ python3 ollama_client.py /tmp/failure-dev-ollama \
 These commands reproduce the saved held-out scores and check byte equality.
 
 ```sh
-python3 workflow.py regrade benchmark/phase3/run.json /tmp/failure-held-out-regrade.json
-cmp benchmark/phase3/scores.json /tmp/failure-held-out-regrade.json
+python3 workflow.py regrade benchmark/held-out/run.json /tmp/failure-held-out-regrade.json
+cmp benchmark/held-out/scores.json /tmp/failure-held-out-regrade.json
 ```

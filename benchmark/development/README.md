@@ -1,4 +1,4 @@
-# Phase 2 development results
+# Development results
 
 These runs used Qwen3 4B (Q4_K_M) in Ollama 0.40.16 on an Apple Silicon Mac
 with 16 GiB of unified memory. All runs used the same ten development cases.
@@ -26,5 +26,5 @@ Prior runs store the visible lines and the benchmark case ID, replacing the
 per-report ID `test-1` in the score artifact. Later runs also store the exact
 request payload. Scores can be regenerated with the offline regrade command.
 
-These scores reflect a small controlled development benchmark. Phase 3 will
-score the frozen configuration on 25 held-out cases.
+The [held-out report](../held-out/README.md) covers the separate 25-case
+evaluation of the frozen configuration.

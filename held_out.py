@@ -1,4 +1,4 @@
-"""Run the Phase 3 benchmark once against the Phase 2 freeze."""
+"""Run the held-out benchmark once using the frozen configuration."""
 
 import argparse
 import hashlib

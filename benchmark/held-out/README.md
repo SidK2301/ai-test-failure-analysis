@@ -1,4 +1,4 @@
-# Phase 3 held-out benchmark
+# Held-out benchmark results
 
 Qwen3 4B usually located the causal line, often chose the wrong category, and
 never abstained on the sparse cases.
@@ -7,8 +7,8 @@ never abstained on the sparse cases.
 - **Category accuracy:** 6/18. The model labeled the remaining 12 diagnosable cases as missing dependencies.
 - **Abstention:** 0/7. Every sparse case was diagnosed as a timeout.
 
-Qwen3 4B (Q4_K_M) ran on local Ollama 0.40.16 using
-`phase-2-freeze` at commit `f743d2b`.
+Qwen3 4B (Q4_K_M) ran on local Ollama 0.40.16 using the frozen configuration
+(tag `phase-2-freeze`, commit `f743d2b`).
 The run produced 6 correct outcomes across 25 cases.
 
 | Case group | Cases | Correct diagnoses | Wrong diagnoses | Correct abstentions | False abstentions | False diagnoses | Workflow errors |

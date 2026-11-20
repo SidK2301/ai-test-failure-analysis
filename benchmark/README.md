@@ -1,4 +1,4 @@
-# Phase 2 development benchmark
+# Development benchmark
 
 The checked-in reports capture 35 actual unittest failures from a small fault
 fixture. It simulates application failures offline. The benchmark measures
@@ -37,10 +37,10 @@ is due after dev iteration.
 
 ## Local Ollama benchmark
 
-The Phase 2 freeze uses Qwen3 4B with Ollama. See
-[the development results](phase2/README.md) and
-[the frozen configuration](phase2/frozen.json). The 25 held-out cases remain
-reserved for Phase 3.
+The frozen configuration uses Qwen3 4B with Ollama. See the
+[development results](development/README.md),
+[frozen configuration](development/frozen.json), and
+[held-out results](held-out/README.md).
 
 Start the pinned Ollama release in a separate terminal with the same server
 settings used for the benchmark.
