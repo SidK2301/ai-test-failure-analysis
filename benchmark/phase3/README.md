@@ -1,10 +1,15 @@
 # Phase 3 held-out benchmark
 
+Qwen3 4B usually located the causal line, often chose the wrong category, and
+never abstained on the sparse cases.
+
+- **First causal pick:** 17/18 for the model versus 8/18 for the heuristic. On cascades, it was 10/10 versus 0/10.
+- **Category accuracy:** 6/18. The model labeled the remaining 12 diagnosable cases as missing dependencies.
+- **Abstention:** 0/7. Every sparse case was diagnosed as a timeout.
+
 Qwen3 4B (Q4_K_M) ran on local Ollama 0.40.16 using
 `phase-2-freeze` at commit `f743d2b`.
-The single held-out run produced **6/25 correct outcomes**.
-The test reports come from controlled fault injections in seven scenario groups
-across both splits. These results describe the held-out fixtures and this configuration.
+The run produced 6 correct outcomes across 25 cases.
 
 | Case group | Cases | Correct diagnoses | Wrong diagnoses | Correct abstentions | False abstentions | False diagnoses | Workflow errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -39,10 +44,12 @@ The requests incurred $0 in API charges.
   diagnosable cases.
 - It classified all 12 other diagnosable failures as missing dependencies,
   including unsupported configuration values, invalid JSON, and permission
-  errors. Several explanations echoed the missing-plugin example in the frozen
-  prompt despite identifying the correct line ID. For example, it cited line 3
-  of `environment-mode-1`, which says the supplied application mode is
-  unsupported, and described a failed plugin import.
+  errors. **Prompt-example bias:** Several explanations echoed the
+  missing-plugin example in the frozen prompt even when the cited line
+  identified a different cause. On `environment-mode-1`, the model cited
+  line 3, which reports an unsupported application mode, and described a
+  failed plugin import. This pattern suggests the example influenced the
+  4B model's classifications. The run did not isolate the example's effect.
 - All seven sparse responses took the generic test deadline as evidence for a
   timeout. The visible logs establish the missing result and leave its cause
   inconclusive. Each response counts as a false diagnosis.
@@ -50,6 +57,16 @@ The requests incurred $0 in API charges.
   with 0 for the first-error heuristic. The heuristic selected the earlier
   telemetry error in each cascade. On direct cases the model found the causal
   line in 7 of 8, compared with 8 of 8 for the heuristic.
+
+## Limitations
+
+- The benchmark has seven scenario groups across both splits. Variants within
+  a group share the same underlying fault, so the cases are correlated.
+- Every cascade fixture puts the same telemetry error first. The heuristic's
+  0/10 on cascades measures its behavior against that distractor pattern.
+- The results come from one run of one quantized 4B model.
+- This held-out set has now been seen. Evaluate prompt revisions on a fresh
+  held-out set or label any rerun on these cases as post-freeze.
 
 ## Run provenance
 
