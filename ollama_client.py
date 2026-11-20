@@ -14,7 +14,7 @@ from workflow import regrade, write_json
 
 BASE_URL = "http://127.0.0.1:11434"
 CONTEXT = 4096
-MAX_TOKENS = 512
+MAX_TOKENS = 1536
 SEED = 42701
 LOCAL_SCHEMA = {
     "anyOf": [
@@ -75,7 +75,7 @@ class Ollama:
     def __call__(self, visible):
         payload = {
             "model": self.model, "stream": False, "format": LOCAL_SCHEMA,
-            "think": False, "truncate": False, "shift": False,
+            "think": True, "truncate": False, "shift": False,
             "options": self.options,
             "messages": [
                 {"role": "system", "content": self.prompt},
