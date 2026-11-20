@@ -14,7 +14,7 @@ class OllamaTests(unittest.TestCase):
             result = client({"lines": []})
         path, payload = request.call_args.args
         self.assertEqual(path, "/api/chat")
-        self.assertEqual(len(payload["format"]["anyOf"]), 2)
+        self.assertEqual(payload["format"]["type"], "object")
         self.assertEqual(payload["options"]["num_ctx"], 4096)
         self.assertFalse(payload["truncate"])
         self.assertFalse(payload["shift"])

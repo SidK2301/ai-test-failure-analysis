@@ -1,0 +1,327 @@
+{
+  "by_group": {
+    "cascade": {
+      "cases": 4,
+      "category_correct": {
+        "hits": 0,
+        "total": 4
+      },
+      "citation_validity": {
+        "hits": 0,
+        "total": 0
+      },
+      "coverage": {
+        "hits": 0,
+        "total": 4
+      },
+      "evidence_correct": {
+        "hits": 0,
+        "total": 4
+      },
+      "extra_citation_only": 0,
+      "heuristic_hit": {
+        "hits": 0,
+        "total": 4
+      },
+      "model_hit": {
+        "hits": 0,
+        "total": 4
+      },
+      "ordering_failure": 0,
+      "outcomes": {
+        "correct_abstention": 0,
+        "correct_diagnosis": 0,
+        "false_abstention": 4,
+        "false_diagnosis": 0,
+        "workflow_error": 0,
+        "wrong_diagnosis": 0
+      }
+    },
+    "direct": {
+      "cases": 4,
+      "category_correct": {
+        "hits": 0,
+        "total": 4
+      },
+      "citation_validity": {
+        "hits": 0,
+        "total": 0
+      },
+      "coverage": {
+        "hits": 0,
+        "total": 4
+      },
+      "evidence_correct": {
+        "hits": 0,
+        "total": 4
+      },
+      "extra_citation_only": 0,
+      "heuristic_hit": {
+        "hits": 4,
+        "total": 4
+      },
+      "model_hit": {
+        "hits": 0,
+        "total": 4
+      },
+      "ordering_failure": 0,
+      "outcomes": {
+        "correct_abstention": 0,
+        "correct_diagnosis": 0,
+        "false_abstention": 4,
+        "false_diagnosis": 0,
+        "workflow_error": 0,
+        "wrong_diagnosis": 0
+      }
+    },
+    "sparse": {
+      "cases": 2,
+      "category_correct": {
+        "hits": 0,
+        "total": 0
+      },
+      "citation_validity": {
+        "hits": 0,
+        "total": 0
+      },
+      "coverage": {
+        "hits": 0,
+        "total": 0
+      },
+      "evidence_correct": {
+        "hits": 0,
+        "total": 0
+      },
+      "extra_citation_only": 0,
+      "heuristic_hit": {
+        "hits": 0,
+        "total": 0
+      },
+      "model_hit": {
+        "hits": 0,
+        "total": 0
+      },
+      "ordering_failure": 0,
+      "outcomes": {
+        "correct_abstention": 2,
+        "correct_diagnosis": 0,
+        "false_abstention": 0,
+        "false_diagnosis": 0,
+        "workflow_error": 0,
+        "wrong_diagnosis": 0
+      }
+    }
+  },
+  "cases": [
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "cascade",
+      "heuristic_hit": false,
+      "id": "health-state-1",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "cascade",
+      "heuristic_hit": false,
+      "id": "health-state-2",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "direct",
+      "heuristic_hit": true,
+      "id": "health-state-3",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "direct",
+      "heuristic_hit": true,
+      "id": "health-state-4",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": false,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "sparse",
+      "heuristic_hit": false,
+      "id": "health-state-5",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "correct_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "cascade",
+      "heuristic_hit": false,
+      "id": "plugin-import-1",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "cascade",
+      "heuristic_hit": false,
+      "id": "plugin-import-2",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "direct",
+      "heuristic_hit": true,
+      "id": "plugin-import-3",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": true,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "direct",
+      "heuristic_hit": true,
+      "id": "plugin-import-4",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "false_abstention",
+      "valid_citations": 0
+    },
+    {
+      "category_correct": false,
+      "citations": 0,
+      "coverage": false,
+      "diagnosable": false,
+      "evidence_correct": false,
+      "extra_citation_only": false,
+      "group": "sparse",
+      "heuristic_hit": false,
+      "id": "plugin-import-5",
+      "model_hit": false,
+      "ordering_failure": false,
+      "outcome": "correct_abstention",
+      "valid_citations": 0
+    }
+  ],
+  "overall": {
+    "cases": 10,
+    "category_correct": {
+      "hits": 0,
+      "total": 8
+    },
+    "citation_validity": {
+      "hits": 0,
+      "total": 0
+    },
+    "coverage": {
+      "hits": 0,
+      "total": 8
+    },
+    "evidence_correct": {
+      "hits": 0,
+      "total": 8
+    },
+    "extra_citation_only": 0,
+    "heuristic_hit": {
+      "hits": 4,
+      "total": 8
+    },
+    "model_hit": {
+      "hits": 0,
+      "total": 8
+    },
+    "ordering_failure": 0,
+    "outcomes": {
+      "correct_abstention": 2,
+      "correct_diagnosis": 0,
+      "false_abstention": 8,
+      "false_diagnosis": 0,
+      "workflow_error": 0,
+      "wrong_diagnosis": 0
+    }
+  },
+  "usage": {
+    "attempts": 10,
+    "cost_usd": {
+      "recorded": 10,
+      "total": "0"
+    },
+    "input_tokens": {
+      "recorded": 10,
+      "total": "4778"
+    },
+    "latency_ms": {
+      "recorded": 10,
+      "total": "9035.653"
+    },
+    "output_tokens": {
+      "recorded": 10,
+      "total": "280"
+    },
+    "requests": {
+      "recorded": 10,
+      "total": "10"
+    }
+  }
+}

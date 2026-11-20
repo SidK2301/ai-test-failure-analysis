@@ -34,3 +34,28 @@ cost stays unset. Prompt and heuristic tuning happen on dev only. A freeze tag
 is due after dev iteration.
 
 [Claude Messages API](https://platform.claude.com/docs/en/api/messages/create)
+
+## Local Ollama benchmark
+
+The Phase 2 freeze uses Qwen3 4B with Ollama. See
+[the development results](phase2/README.md) and
+[the frozen configuration](phase2/frozen.json). The 25 held-out cases remain
+reserved for Phase 3.
+
+Start the pinned Ollama release in a separate terminal with the same server
+settings used for the benchmark.
+
+```sh
+env OLLAMA_HOST=127.0.0.1:11434 OLLAMA_NO_CLOUD=1 OLLAMA_FLASH_ATTENTION=1 OLLAMA_KV_CACHE_TYPE=q8_0 ollama serve
+```
+
+Install the model with `ollama pull qwen3:4b`. The exact digest in the
+frozen configuration is required because tags can change. To rerun development
+with the pinned settings, use a new output directory.
+
+```sh
+python3 ollama_client.py /tmp/failure-dev-ollama \
+  --model qwen3:4b \
+  --digest 359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7 \
+  --ollama-version 0.40.16
+```

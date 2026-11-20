@@ -1,0 +1,93 @@
+{
+  "held_out_requests": 0,
+  "heuristic_pattern": "\\b(?:errors?|exceptions?|[A-Za-z_][A-Za-z_0-9]*(?:Error|Exception))\\b",
+  "request_settings": {
+    "options": {
+      "num_ctx": 4096,
+      "num_predict": 512,
+      "seed": 42701,
+      "temperature": 0
+    },
+    "shift": false,
+    "stream": false,
+    "think": false,
+    "truncate": false
+  },
+  "run_configuration": {
+    "backend": "ollama",
+    "max_tokens": 512,
+    "model": "qwen3:4b",
+    "model_details": {
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M",
+      "runner": "ggml"
+    },
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "num_ctx": 4096,
+    "num_predict": 512,
+    "ollama_version": "0.40.16",
+    "prompt_sha256": "6d2c7db2e8376772181026421170416530eac28045cee5b52b15ca9f050e4bf3",
+    "seed": 42701,
+    "temperature": 0
+  },
+  "selected_development_run": "tuned/run.json",
+  "server_environment": {
+    "OLLAMA_FLASH_ATTENTION": "1",
+    "OLLAMA_HOST": "127.0.0.1:11434",
+    "OLLAMA_KV_CACHE_TYPE": "q8_0",
+    "OLLAMA_NO_CLOUD": "1"
+  },
+  "sha256": {
+    "benchmark/labels.json": "64aaf6322f97007bbee2bc7018e93e1a8a5ee988f06dee5ca92f5d49a13d6ba5",
+    "benchmark/manifest.json": "8c3f5b3c69003ee0cb35c2879663e8d6759d322a80961b61d668e29e8abacd4e",
+    "benchmark/reports/access-policy-1.xml": "42c597b6cccc2edae0a49912bf78b782c582dbae1d2e24c59af7ae58e1597c28",
+    "benchmark/reports/access-policy-2.xml": "aa5b3cb2e38dd0cfd0c301ab138a2e1a38c9122ad476b2f4f49414c37ab76cc0",
+    "benchmark/reports/access-policy-3.xml": "0c1875c4503337d438d4abb6d638163f060d047ce620781897e8edfa571ba526",
+    "benchmark/reports/access-policy-4.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/access-policy-5.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/environment-mode-1.xml": "b1ca4ef5a2ee2da1b84d4988dfcc1f2157d8e37b8ddc45a5c6c818c1271033dc",
+    "benchmark/reports/environment-mode-2.xml": "914605973e299cf67563ffbe793f5b36bd41d9e94a614d5e3faf24ab21006fba",
+    "benchmark/reports/environment-mode-3.xml": "017939b707ae5ca239d56d06c932a11ac70add944232248747444568c414db2b",
+    "benchmark/reports/environment-mode-4.xml": "4f74dec64843d8c6b7826cb3f748fb52fde8ab84a70e72f0541df81c6d29bdf0",
+    "benchmark/reports/environment-mode-5.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/health-state-1.xml": "62563b29cb7891e1f105e61a3cd34f8abc00fdc31ced78293a092d01c7f3fb92",
+    "benchmark/reports/health-state-2.xml": "85c1fa6466277903a8d2ca5f39e7edf116438abea02bf953f20b114b67cfe475",
+    "benchmark/reports/health-state-3.xml": "05e4db395917a5d8c016748773eedd330dc3b48833f36eb699701661a019f4c2",
+    "benchmark/reports/health-state-4.xml": "fa9427499786196bc5b72ea17b6c855f25309cc15380f1b3265e83b9a2fea369",
+    "benchmark/reports/health-state-5.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/lease-deadline-1.xml": "50cccc7e623aa9d46d2c7fc9be27d3d8533f6e284694c32da81b36ad8e0193ee",
+    "benchmark/reports/lease-deadline-2.xml": "9537230a14c8e7fa02160e7050b1d6f89bbb10c524c018160eaa9f07347fba96",
+    "benchmark/reports/lease-deadline-3.xml": "4a7a8529195b6cd90e4a3dddde555e59135ffe4016431bf4594746e25ca0ad16",
+    "benchmark/reports/lease-deadline-4.xml": "e6b1355176426cd9487c480c093b0b4af103e8bff80f2833a2c3accfe9f07d64",
+    "benchmark/reports/lease-deadline-5.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/payload-decode-1.xml": "9efe6b9ac9cba5480cbf5e0f8b8ec3951f2a2aff3d7e08fb3beb59719a1598ee",
+    "benchmark/reports/payload-decode-2.xml": "9efe6b9ac9cba5480cbf5e0f8b8ec3951f2a2aff3d7e08fb3beb59719a1598ee",
+    "benchmark/reports/payload-decode-3.xml": "beca7190e210078118547f6d3d55fc5018a0bd7ea0975ab42341e649e9c30155",
+    "benchmark/reports/payload-decode-4.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/payload-decode-5.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/plugin-import-1.xml": "c7e0aa3361e129404168f7de8c96a6e2ca5d77ff6b65a53110d6c25eade867fa",
+    "benchmark/reports/plugin-import-2.xml": "91c1320415dbc192088bcf20c2215866c19d765e3fbd39bf95fef70d2b69a4ff",
+    "benchmark/reports/plugin-import-3.xml": "71c5717dda27a3d26cbceb92233fc9f5ce53f4a8e9ff620cc120bd2265e69d0c",
+    "benchmark/reports/plugin-import-4.xml": "c34a5772445e567c12d53a686a79206f29b8aed39625f6fd67cf2d5cf60ab2e8",
+    "benchmark/reports/plugin-import-5.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "benchmark/reports/transport-1.xml": "a26c33d142f249b901350d3e758429a7489e46d3dbe3e33b166ca0aadc02bdf8",
+    "benchmark/reports/transport-2.xml": "15b0cb7c57a2c5420b3567fadb4dff146af4599e7ec54566d7b55bb84f533463",
+    "benchmark/reports/transport-3.xml": "5c8984e3796bbda6faee03bae84946343272d6a9b3cdd5b6168b6371337ad355",
+    "benchmark/reports/transport-4.xml": "fefdd8b13345e1cd6a1e031b672f43a14444fea2617c3d14f3a7dcc06cc82bcb",
+    "benchmark/reports/transport-5.xml": "1e668bee3404f21fbcd6bc092769fb1b28714df202fa0e572c8489111de63a6f",
+    "eval_spec.md": "3d302b37f3abe79738941eb4407274ae93563717cd644cccf28d0501fa51b7fa",
+    "model_client.py": "e7e2eb74769cb2d4bd69b588e43520602b741a7a5520c187e6019699c9c3b0c9",
+    "ollama_client.py": "79ee6591cabd2e0c7ace80e4da0fc019737882e1ddd46ddf459645f060896b63",
+    "prompt.txt": "6d2c7db2e8376772181026421170416530eac28045cee5b52b15ca9f050e4bf3",
+    "workflow.py": "9da70954f59ff1938cd3f3165b539e01e0eadbdc457bd820c468e0fa9c2c374b"
+  },
+  "tag": "phase-2-freeze"
+}

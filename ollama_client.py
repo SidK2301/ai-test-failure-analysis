@@ -1,6 +1,7 @@
 """Run the development benchmark against a pinned local Ollama model."""
 
 import argparse
+from copy import deepcopy
 import hashlib
 import json
 from pathlib import Path
@@ -14,32 +15,10 @@ from workflow import regrade, write_json
 
 BASE_URL = "http://127.0.0.1:11434"
 CONTEXT = 4096
-MAX_TOKENS = 1536
+MAX_TOKENS = 512
 SEED = 42701
-LOCAL_SCHEMA = {
-    "anyOf": [
-        {
-            "type": "object",
-            "required": ["status", "evidence", "root_cause"],
-            "additionalProperties": False,
-            "properties": {
-                "status": {"const": "diagnosed"},
-                "evidence": {"type": "array", "items": {"type": "integer"}, "minItems": 1, "maxItems": 3},
-                "root_cause": SCHEMA["properties"]["root_cause"]["anyOf"][1],
-            },
-        },
-        {
-            "type": "object",
-            "required": ["status", "evidence", "root_cause"],
-            "additionalProperties": False,
-            "properties": {
-                "status": {"const": "insufficient_evidence"},
-                "evidence": {"type": "array", "maxItems": 0},
-                "root_cause": {"type": "null"},
-            },
-        },
-    ],
-}
+LOCAL_SCHEMA = deepcopy(SCHEMA)
+LOCAL_SCHEMA["properties"]["root_cause"]["anyOf"].reverse()
 
 
 class Ollama:
@@ -75,7 +54,7 @@ class Ollama:
     def __call__(self, visible):
         payload = {
             "model": self.model, "stream": False, "format": LOCAL_SCHEMA,
-            "think": True, "truncate": False, "shift": False,
+            "think": False, "truncate": False, "shift": False,
             "options": self.options,
             "messages": [
                 {"role": "system", "content": self.prompt},

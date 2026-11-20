@@ -1,0 +1,76 @@
+{
+  "case_id": "plugin-import-1",
+  "identity": {
+    "model": "qwen3:4b",
+    "model_details": {
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M",
+      "runner": "ggml"
+    },
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "ollama_version": "0.40.16"
+  },
+  "overflow": {
+    "cost_usd": "0",
+    "latency_ms": 25.084,
+    "request_error": "HTTP 400: request (15189 tokens) exceeds the available context size (4096 tokens), try increasing it",
+    "requests": 1
+  },
+  "running_model": {
+    "models": [
+      {
+        "context_length": 4096,
+        "details": {
+          "families": [
+            "qwen3"
+          ],
+          "family": "qwen3",
+          "format": "gguf",
+          "parameter_size": "4.0B",
+          "parent_model": "",
+          "quantization_level": "Q4_K_M"
+        },
+        "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "expires_at": "2026-11-20T03:49:12.035043-05:00",
+        "model": "qwen3:4b",
+        "name": "qwen3:4b",
+        "runner": "llamacpp",
+        "size": 2900078099,
+        "size_vram": 2900078099
+      }
+    ]
+  },
+  "smoke": {
+    "cost_usd": "0",
+    "input_tokens": 527,
+    "latency_ms": 3377.649,
+    "output_tokens": 28,
+    "raw_api_response": {
+      "created_at": "2026-11-20T08:44:12.009649Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 28,
+      "eval_duration": 687675000,
+      "load_duration": 1776138625,
+      "message": {
+        "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "role": "assistant"
+      },
+      "model": "qwen3:4b",
+      "prompt_eval_cached_count": 0,
+      "prompt_eval_count": 527,
+      "prompt_eval_duration": 910669000,
+      "total_duration": 3377038041
+    },
+    "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+    "requests": 1
+  }
+}

@@ -1,0 +1,972 @@
+{
+  "cases": [
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 528,
+        "latency_ms": 1027.501,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:13.159453Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 695922000,
+          "load_duration": 504708,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 264,
+          "prompt_eval_count": 528,
+          "prompt_eval_duration": 328613000,
+          "total_duration": 1026716625
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "assertion",
+        "context": [],
+        "group": "cascade",
+        "sets": [
+          [
+            3
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "health-state-1",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "ERROR telemetry exporter skipped optional metrics"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "system-out",
+            "text": "AssertionError: health state must be ready, got service_1"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "system-out",
+            "text": "ERROR no result available for publication"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 105, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "    self.fail(\"Test did not receive a result before its deadline\")"
+          },
+          {
+            "clipped": false,
+            "id": 8,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 9,
+            "source": "failure",
+            "text": "AssertionError: Test did not receive a result before its deadline"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 528,
+        "latency_ms": 949.744,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:14.109541Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 690096000,
+          "load_duration": 527792,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 276,
+          "prompt_eval_count": 528,
+          "prompt_eval_duration": 252821000,
+          "total_duration": 949148125
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "assertion",
+        "context": [],
+        "group": "cascade",
+        "sets": [
+          [
+            3
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "health-state-2",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "ERROR telemetry exporter skipped optional metrics"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "system-out",
+            "text": "AssertionError: health state must be ready, got service_2"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "system-out",
+            "text": "ERROR no result available for publication"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 105, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "    self.fail(\"Test did not receive a result before its deadline\")"
+          },
+          {
+            "clipped": false,
+            "id": 8,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 9,
+            "source": "failure",
+            "text": "AssertionError: Test did not receive a result before its deadline"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 452,
+        "latency_ms": 931.899,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:15.0416Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 694003000,
+          "load_duration": 518458,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 234,
+          "prompt_eval_count": 452,
+          "prompt_eval_duration": 231176000,
+          "total_duration": 931342208
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "assertion",
+        "context": [],
+        "group": "direct",
+        "sets": [
+          [
+            2
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "health-state-3",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "AssertionError: health state must be ready, got service_3"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 102, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "    self.fail(\"Operation could not complete\")"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "AssertionError: Operation could not complete"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 452,
+        "latency_ms": 931.157,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:15.972984Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 697042000,
+          "load_duration": 471750,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 246,
+          "prompt_eval_count": 452,
+          "prompt_eval_duration": 231270000,
+          "total_duration": 930637625
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "assertion",
+        "context": [],
+        "group": "direct",
+        "sets": [
+          [
+            2
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "health-state-4",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "AssertionError: health state must be ready, got service_4"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 102, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "    self.fail(\"Operation could not complete\")"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "AssertionError: Operation could not complete"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 431,
+        "latency_ms": 928.493,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:16.901634Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 693193000,
+          "load_duration": 513000,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 227,
+          "prompt_eval_count": 431,
+          "prompt_eval_duration": 229108000,
+          "total_duration": 927942125
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": null,
+        "context": [],
+        "group": "sparse",
+        "sets": []
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "health-state-5",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 105, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "failure",
+            "text": "    self.fail(\"Test did not receive a result before its deadline\")"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "AssertionError: Test did not receive a result before its deadline"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 527,
+        "latency_ms": 732.853,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:17.634734Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 688883000,
+          "load_duration": 492875,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 526,
+          "prompt_eval_count": 527,
+          "prompt_eval_duration": 34835000,
+          "total_duration": 732374208
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "missing_dependency",
+        "context": [],
+        "group": "cascade",
+        "sets": [
+          [
+            3
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "plugin-import-1",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "ERROR telemetry exporter skipped optional metrics"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "system-out",
+            "text": "ModuleNotFoundError: No module named '_benchmark_missing_service_1'"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "system-out",
+            "text": "ERROR no result available for publication"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 105, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "    self.fail(\"Test did not receive a result before its deadline\")"
+          },
+          {
+            "clipped": false,
+            "id": 8,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 9,
+            "source": "failure",
+            "text": "AssertionError: Test did not receive a result before its deadline"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 527,
+        "latency_ms": 941.718,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:18.576623Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 692063000,
+          "load_duration": 500709,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 275,
+          "prompt_eval_count": 527,
+          "prompt_eval_duration": 244767000,
+          "total_duration": 941221667
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "missing_dependency",
+        "context": [],
+        "group": "cascade",
+        "sets": [
+          [
+            3
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "plugin-import-2",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "ERROR telemetry exporter skipped optional metrics"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "system-out",
+            "text": "ModuleNotFoundError: No module named '_benchmark_missing_service_2'"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "system-out",
+            "text": "ERROR no result available for publication"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 105, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "    self.fail(\"Test did not receive a result before its deadline\")"
+          },
+          {
+            "clipped": false,
+            "id": 8,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 9,
+            "source": "failure",
+            "text": "AssertionError: Test did not receive a result before its deadline"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 451,
+        "latency_ms": 933.059,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:19.509871Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 695030000,
+          "load_duration": 434875,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 234,
+          "prompt_eval_count": 451,
+          "prompt_eval_duration": 231451000,
+          "total_duration": 932461334
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "missing_dependency",
+        "context": [],
+        "group": "direct",
+        "sets": [
+          [
+            2
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "plugin-import-3",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "ModuleNotFoundError: No module named '_benchmark_missing_service_3'"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 102, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "    self.fail(\"Operation could not complete\")"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "AssertionError: Operation could not complete"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 451,
+        "latency_ms": 925.922,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:20.436012Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 692797000,
+          "load_duration": 959333,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 245,
+          "prompt_eval_count": 451,
+          "prompt_eval_duration": 229840000,
+          "total_duration": 925419041
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": "missing_dependency",
+        "context": [],
+        "group": "direct",
+        "sets": [
+          [
+            2
+          ]
+        ]
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "plugin-import-4",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "system-out",
+            "text": "ModuleNotFoundError: No module named '_benchmark_missing_service_4'"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 102, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "    self.fail(\"Operation could not complete\")"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 7,
+            "source": "failure",
+            "text": "AssertionError: Operation could not complete"
+          }
+        ],
+        "name": ""
+      }
+    },
+    {
+      "attempt": {
+        "cost_usd": "0",
+        "input_tokens": 431,
+        "latency_ms": 733.307,
+        "output_tokens": 28,
+        "raw_api_response": {
+          "created_at": "2026-11-20T08:44:21.16945Z",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 28,
+          "eval_duration": 692302000,
+          "load_duration": 371958,
+          "message": {
+            "content": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+            "role": "assistant"
+          },
+          "model": "qwen3:4b",
+          "prompt_eval_cached_count": 430,
+          "prompt_eval_count": 431,
+          "prompt_eval_duration": 32506999,
+          "total_duration": 732844791
+        },
+        "raw_response": "{\n  \"root_cause\": null,\n  \"evidence\": [],\n  \"status\": \"insufficient_evidence\"\n}",
+        "requests": 1
+      },
+      "label": {
+        "category": null,
+        "context": [],
+        "group": "sparse",
+        "sets": []
+      },
+      "visible": {
+        "classname": "Fixture",
+        "dropped_lines": {
+          "failure": 0,
+          "system-err": 0,
+          "system-out": 0
+        },
+        "id": "plugin-import-5",
+        "lines": [
+          {
+            "clipped": false,
+            "id": 1,
+            "source": "system-out",
+            "text": "WARNING background cache refresh postponed"
+          },
+          {
+            "clipped": false,
+            "id": 2,
+            "source": "failure",
+            "text": "Traceback (most recent call last):"
+          },
+          {
+            "clipped": false,
+            "id": 3,
+            "source": "failure",
+            "text": "  File \"fixtures.py\", line 105, in runTest"
+          },
+          {
+            "clipped": false,
+            "id": 4,
+            "source": "failure",
+            "text": "    self.fail(\"Test did not receive a result before its deadline\")"
+          },
+          {
+            "clipped": false,
+            "id": 5,
+            "source": "failure",
+            "text": "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+          },
+          {
+            "clipped": false,
+            "id": 6,
+            "source": "failure",
+            "text": "AssertionError: Test did not receive a result before its deadline"
+          }
+        ],
+        "name": ""
+      }
+    }
+  ],
+  "heuristic_pattern": "\\b(?:errors?|exceptions?|[A-Za-z_][A-Za-z_0-9]*(?:Error|Exception))\\b",
+  "metadata": {
+    "backend": "ollama",
+    "git_hash": "1eaee5b85e0053fb2393b1ec2a64637855f17429",
+    "git_status": "",
+    "max_tokens": 512,
+    "model": "qwen3:4b",
+    "model_details": {
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M",
+      "runner": "ggml"
+    },
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "num_ctx": 4096,
+    "num_predict": 512,
+    "ollama_version": "0.40.16",
+    "prompt_sha256": "2797f66095fb16adbbfc1b1560698506f24c957af359c5066b53977c1222075e",
+    "seed": 42701,
+    "split": "dev",
+    "temperature": 0
+  },
+  "version": 1
+}
