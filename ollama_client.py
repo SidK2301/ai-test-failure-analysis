@@ -1,7 +1,6 @@
 """Run the development benchmark against a pinned local Ollama model."""
 
 import argparse
-from copy import deepcopy
 import hashlib
 import json
 from pathlib import Path
@@ -17,8 +16,12 @@ BASE_URL = "http://127.0.0.1:11434"
 CONTEXT = 4096
 MAX_TOKENS = 512
 SEED = 42701
-LOCAL_SCHEMA = deepcopy(SCHEMA)
-LOCAL_SCHEMA["properties"]["root_cause"]["anyOf"].reverse()
+LOCAL_SCHEMA = SCHEMA.copy()
+# Generate evidence before committing to a diagnosis or category.
+LOCAL_SCHEMA["properties"] = {
+    key: SCHEMA["properties"][key] for key in ("evidence", "status", "root_cause")
+}
+LOCAL_SCHEMA["required"] = list(LOCAL_SCHEMA["properties"])
 
 
 class Ollama:
@@ -62,7 +65,7 @@ class Ollama:
             ],
         }
         start = monotonic()
-        attempt = {"requests": 1, "cost_usd": "0"}
+        attempt = {"requests": 1, "cost_usd": "0", "request_payload": payload}
         try:
             body = self.request("/api/chat", payload)
             attempt["raw_api_response"] = body
