@@ -1,0 +1,316 @@
+{
+  "access-policy-1": {
+    "category": "other",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "access-policy-2": {
+    "category": "other",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "access-policy-3": {
+    "category": "other",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "access-policy-4": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "access-policy-5": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "environment-mode-1": {
+    "category": "config",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "environment-mode-2": {
+    "category": "config",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "environment-mode-3": {
+    "category": "config",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "environment-mode-4": {
+    "category": "config",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "environment-mode-5": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "health-state-1": {
+    "category": "assertion",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "health-state-2": {
+    "category": "assertion",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "health-state-3": {
+    "category": "assertion",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "health-state-4": {
+    "category": "assertion",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "health-state-5": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "lease-deadline-1": {
+    "category": "timeout",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "lease-deadline-2": {
+    "category": "timeout",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "lease-deadline-3": {
+    "category": "timeout",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "lease-deadline-4": {
+    "category": "timeout",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "lease-deadline-5": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "payload-decode-1": {
+    "category": "data",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "payload-decode-2": {
+    "category": "data",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "payload-decode-3": {
+    "category": "data",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "payload-decode-4": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "payload-decode-5": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "plugin-import-1": {
+    "category": "missing_dependency",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "plugin-import-2": {
+    "category": "missing_dependency",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "plugin-import-3": {
+    "category": "missing_dependency",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "plugin-import-4": {
+    "category": "missing_dependency",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "plugin-import-5": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  },
+  "transport-1": {
+    "category": "network",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "transport-2": {
+    "category": "network",
+    "context": [],
+    "group": "cascade",
+    "sets": [
+      [
+        3
+      ]
+    ]
+  },
+  "transport-3": {
+    "category": "network",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "transport-4": {
+    "category": "network",
+    "context": [],
+    "group": "direct",
+    "sets": [
+      [
+        2
+      ]
+    ]
+  },
+  "transport-5": {
+    "category": null,
+    "context": [],
+    "group": "sparse",
+    "sets": []
+  }
+}

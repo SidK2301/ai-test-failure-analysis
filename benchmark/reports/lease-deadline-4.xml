@@ -1,0 +1,8 @@
+<testsuite name="Injected faults" tests="1" failures="1"><testcase classname="Fixture"><system-out>WARNING background cache refresh postponed
+TimeoutError: lease acquisition exceeded deadline for service_4
+</system-out><failure type="AssertionError">Traceback (most recent call last):
+  File "fixtures.py", line 102, in runTest
+    self.fail("Operation could not complete")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Operation could not complete
+</failure></testcase></testsuite>

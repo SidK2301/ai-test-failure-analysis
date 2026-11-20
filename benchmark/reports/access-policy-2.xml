@@ -1,0 +1,10 @@
+<testsuite name="Injected faults" tests="1" failures="1"><testcase classname="Fixture"><system-out>WARNING background cache refresh postponed
+ERROR telemetry exporter skipped optional metrics
+PermissionError: sandbox policy denied access to service_2
+ERROR no result available for publication
+</system-out><failure type="AssertionError">Traceback (most recent call last):
+  File "fixtures.py", line 105, in runTest
+    self.fail("Test did not receive a result before its deadline")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Test did not receive a result before its deadline
+</failure></testcase></testsuite>

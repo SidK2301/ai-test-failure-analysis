@@ -1,0 +1,297 @@
+{
+  "cases": [
+    {
+      "group": "cascade",
+      "id": "transport-1",
+      "injected_category": "network",
+      "report": "reports/transport-1.xml",
+      "scenario": "transport",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "transport-2",
+      "injected_category": "network",
+      "report": "reports/transport-2.xml",
+      "scenario": "transport",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "transport-3",
+      "injected_category": "network",
+      "report": "reports/transport-3.xml",
+      "scenario": "transport",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "transport-4",
+      "injected_category": "network",
+      "report": "reports/transport-4.xml",
+      "scenario": "transport",
+      "split": "held_out"
+    },
+    {
+      "group": "sparse",
+      "id": "transport-5",
+      "injected_category": "network",
+      "report": "reports/transport-5.xml",
+      "scenario": "transport",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "health-state-1",
+      "injected_category": "assertion",
+      "report": "reports/health-state-1.xml",
+      "scenario": "health-state",
+      "split": "dev"
+    },
+    {
+      "group": "cascade",
+      "id": "health-state-2",
+      "injected_category": "assertion",
+      "report": "reports/health-state-2.xml",
+      "scenario": "health-state",
+      "split": "dev"
+    },
+    {
+      "group": "direct",
+      "id": "health-state-3",
+      "injected_category": "assertion",
+      "report": "reports/health-state-3.xml",
+      "scenario": "health-state",
+      "split": "dev"
+    },
+    {
+      "group": "direct",
+      "id": "health-state-4",
+      "injected_category": "assertion",
+      "report": "reports/health-state-4.xml",
+      "scenario": "health-state",
+      "split": "dev"
+    },
+    {
+      "group": "sparse",
+      "id": "health-state-5",
+      "injected_category": "assertion",
+      "report": "reports/health-state-5.xml",
+      "scenario": "health-state",
+      "split": "dev"
+    },
+    {
+      "group": "cascade",
+      "id": "plugin-import-1",
+      "injected_category": "missing_dependency",
+      "report": "reports/plugin-import-1.xml",
+      "scenario": "plugin-import",
+      "split": "dev"
+    },
+    {
+      "group": "cascade",
+      "id": "plugin-import-2",
+      "injected_category": "missing_dependency",
+      "report": "reports/plugin-import-2.xml",
+      "scenario": "plugin-import",
+      "split": "dev"
+    },
+    {
+      "group": "direct",
+      "id": "plugin-import-3",
+      "injected_category": "missing_dependency",
+      "report": "reports/plugin-import-3.xml",
+      "scenario": "plugin-import",
+      "split": "dev"
+    },
+    {
+      "group": "direct",
+      "id": "plugin-import-4",
+      "injected_category": "missing_dependency",
+      "report": "reports/plugin-import-4.xml",
+      "scenario": "plugin-import",
+      "split": "dev"
+    },
+    {
+      "group": "sparse",
+      "id": "plugin-import-5",
+      "injected_category": "missing_dependency",
+      "report": "reports/plugin-import-5.xml",
+      "scenario": "plugin-import",
+      "split": "dev"
+    },
+    {
+      "group": "cascade",
+      "id": "environment-mode-1",
+      "injected_category": "config",
+      "report": "reports/environment-mode-1.xml",
+      "scenario": "environment-mode",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "environment-mode-2",
+      "injected_category": "config",
+      "report": "reports/environment-mode-2.xml",
+      "scenario": "environment-mode",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "environment-mode-3",
+      "injected_category": "config",
+      "report": "reports/environment-mode-3.xml",
+      "scenario": "environment-mode",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "environment-mode-4",
+      "injected_category": "config",
+      "report": "reports/environment-mode-4.xml",
+      "scenario": "environment-mode",
+      "split": "held_out"
+    },
+    {
+      "group": "sparse",
+      "id": "environment-mode-5",
+      "injected_category": "config",
+      "report": "reports/environment-mode-5.xml",
+      "scenario": "environment-mode",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "lease-deadline-1",
+      "injected_category": "timeout",
+      "report": "reports/lease-deadline-1.xml",
+      "scenario": "lease-deadline",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "lease-deadline-2",
+      "injected_category": "timeout",
+      "report": "reports/lease-deadline-2.xml",
+      "scenario": "lease-deadline",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "lease-deadline-3",
+      "injected_category": "timeout",
+      "report": "reports/lease-deadline-3.xml",
+      "scenario": "lease-deadline",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "lease-deadline-4",
+      "injected_category": "timeout",
+      "report": "reports/lease-deadline-4.xml",
+      "scenario": "lease-deadline",
+      "split": "held_out"
+    },
+    {
+      "group": "sparse",
+      "id": "lease-deadline-5",
+      "injected_category": "timeout",
+      "report": "reports/lease-deadline-5.xml",
+      "scenario": "lease-deadline",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "payload-decode-1",
+      "injected_category": "data",
+      "report": "reports/payload-decode-1.xml",
+      "scenario": "payload-decode",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "payload-decode-2",
+      "injected_category": "data",
+      "report": "reports/payload-decode-2.xml",
+      "scenario": "payload-decode",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "payload-decode-3",
+      "injected_category": "data",
+      "report": "reports/payload-decode-3.xml",
+      "scenario": "payload-decode",
+      "split": "held_out"
+    },
+    {
+      "group": "sparse",
+      "id": "payload-decode-4",
+      "injected_category": "data",
+      "report": "reports/payload-decode-4.xml",
+      "scenario": "payload-decode",
+      "split": "held_out"
+    },
+    {
+      "group": "sparse",
+      "id": "payload-decode-5",
+      "injected_category": "data",
+      "report": "reports/payload-decode-5.xml",
+      "scenario": "payload-decode",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "access-policy-1",
+      "injected_category": "other",
+      "report": "reports/access-policy-1.xml",
+      "scenario": "access-policy",
+      "split": "held_out"
+    },
+    {
+      "group": "cascade",
+      "id": "access-policy-2",
+      "injected_category": "other",
+      "report": "reports/access-policy-2.xml",
+      "scenario": "access-policy",
+      "split": "held_out"
+    },
+    {
+      "group": "direct",
+      "id": "access-policy-3",
+      "injected_category": "other",
+      "report": "reports/access-policy-3.xml",
+      "scenario": "access-policy",
+      "split": "held_out"
+    },
+    {
+      "group": "sparse",
+      "id": "access-policy-4",
+      "injected_category": "other",
+      "report": "reports/access-policy-4.xml",
+      "scenario": "access-policy",
+      "split": "held_out"
+    },
+    {
+      "group": "sparse",
+      "id": "access-policy-5",
+      "injected_category": "other",
+      "report": "reports/access-policy-5.xml",
+      "scenario": "access-policy",
+      "split": "held_out"
+    }
+  ],
+  "counts": {
+    "dev": {
+      "cascade": 4,
+      "direct": 4,
+      "sparse": 2
+    },
+    "held_out": {
+      "cascade": 10,
+      "direct": 8,
+      "sparse": 7
+    }
+  },
+  "seed": 42701
+}
