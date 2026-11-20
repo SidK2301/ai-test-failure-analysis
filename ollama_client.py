@@ -16,12 +16,30 @@ BASE_URL = "http://127.0.0.1:11434"
 CONTEXT = 4096
 MAX_TOKENS = 512
 SEED = 42701
-LOCAL_SCHEMA = SCHEMA.copy()
-# Generate evidence before committing to a diagnosis or category.
-LOCAL_SCHEMA["properties"] = {
-    key: SCHEMA["properties"][key] for key in ("evidence", "status", "root_cause")
+LOCAL_SCHEMA = {
+    "anyOf": [
+        {
+            "type": "object",
+            "required": ["status", "evidence", "root_cause"],
+            "additionalProperties": False,
+            "properties": {
+                "status": {"const": "diagnosed"},
+                "evidence": {"type": "array", "items": {"type": "integer"}, "minItems": 1, "maxItems": 3},
+                "root_cause": SCHEMA["properties"]["root_cause"]["anyOf"][1],
+            },
+        },
+        {
+            "type": "object",
+            "required": ["status", "evidence", "root_cause"],
+            "additionalProperties": False,
+            "properties": {
+                "status": {"const": "insufficient_evidence"},
+                "evidence": {"type": "array", "maxItems": 0},
+                "root_cause": {"type": "null"},
+            },
+        },
+    ],
 }
-LOCAL_SCHEMA["required"] = list(LOCAL_SCHEMA["properties"])
 
 
 class Ollama:
