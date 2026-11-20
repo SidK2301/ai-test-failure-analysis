@@ -1,6 +1,7 @@
 """Run the development benchmark against a pinned local Ollama model."""
 
 import argparse
+from copy import deepcopy
 import hashlib
 import json
 from pathlib import Path
@@ -16,6 +17,8 @@ BASE_URL = "http://127.0.0.1:11434"
 CONTEXT = 4096
 MAX_TOKENS = 512
 SEED = 42701
+LOCAL_SCHEMA = deepcopy(SCHEMA)
+LOCAL_SCHEMA["properties"]["root_cause"]["anyOf"].reverse()
 
 
 class Ollama:
@@ -50,7 +53,7 @@ class Ollama:
 
     def __call__(self, visible):
         payload = {
-            "model": self.model, "stream": False, "format": SCHEMA,
+            "model": self.model, "stream": False, "format": LOCAL_SCHEMA,
             "think": False, "truncate": False, "shift": False,
             "options": self.options,
             "messages": [
