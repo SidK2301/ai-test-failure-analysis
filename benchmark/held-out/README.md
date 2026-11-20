@@ -70,6 +70,8 @@ The requests incurred $0 in API charges.
 
 ## Run provenance
 
+Commit `b643705` renamed `benchmark/phase3/` to `benchmark/held-out/` after the run. The saved run and scores are byte-identical.
+
 A preflight attempt imported an experimental adapter from the staging
 directory and sent five transport-case requests with reasoning enabled. Four
 returned before the fifth was interrupted. Those requests are excluded from
