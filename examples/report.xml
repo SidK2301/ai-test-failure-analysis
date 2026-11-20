@@ -1,0 +1,11 @@
+<testsuite name="Demo" tests="2" failures="2">
+  <testcase classname="Demo" name="checkout">
+    <failure message="TimeoutError: checkout timed out" />
+    <system-out>WARN cached value
+ERROR connection refused
+network client stopped</system-out>
+  </testcase>
+  <testcase classname="Demo" name="sync">
+    <failure message="TimeoutError: sync timed out" />
+  </testcase>
+</testsuite>
